@@ -6,13 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Sample</title>
     <!-- BootstrapのCSS読み込み -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-taget="#site-menu-yuuichi-nagakura" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- リンク未設定-->
+            <a class="navbar-brand" href="#">Yuuichi Nagakura</a>
+          </div>
+          
+          <!-- ナビゲーション-->
+          <div clas="collapse navbar-collapse" id="site-menu-yuuichi-nagakura">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- ここらへんもリンク未設定 -->
+              <li class="active"><a href="#">About me</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                  Work collection
+                  <span class="caret"></span>
+                </a>
+                <!-- ここに作った作品の紹介ページをリンクさせていく-->
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">App1</a></li>
+                  <li><a href="#">App2</a></li>
+                  <li><a href="#">App3</a></li>
+                  <li><a href="#">App4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="container">
+      <!-- ここからキャンバスで見せるところ-->
+      <div class="row row-offcanvas row-off-canbas-right">
+        <p class="pull-right visible-xs">
+          <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+        </p>
+        <div class="jumbotron bg_img">
+          <h1>Yuuichi Nagakura</h1>
+          <h2>Profile</h2>
+          <p>
+            I have a pen. I have an apple. apple-pen. I have a pen. I have a pineapple.<br>Pen-Pineapple-Apple-Pen.
+          </p>
+          <h2>Links</h2>
+          <ul>
+            <li>Github: <a href="https://github.com/nagakuray"target="_blank">https://github.com/nagakuray</a></li>
+           
+          </ul>
+          
+        </div>
+        
+        <h2>Work collection</h2>
+        <hr>
+        
+        <div class="row">
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="img/profile.jpg" alt="...">
+                <div class="caption">
+                  <h3>App1</h3>
+                  <p>いけめん</p>
+                  <p><a href="#" class="btn btn-info" role="button">View details</a></p>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="img/profile.jpg" alt="...">
+                <div class="caption">
+                  <h3>App2</h3>
+                  <p>いけめん</p>
+                  <p><a href="#" class="btn btn-info" role="button">View details</a></p>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="img/profile.jpg" alt="...">
+                <div class="caption">
+                  <h3>App3</h3>
+                  <p>いけめん</p>
+                  <p><a href="#" class="btn btn-info" role="button">View details</a></p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="img/profile.jpg" alt="...">
+                <div class="caption">
+                  <h3>App4</h3>
+                  <p>いけめん</p>
+                  <p><a href="#" class="btn btn-info" role="button">View details</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ここまでキャンバスで見せるところ -->
+    </div>
+    
+    <footer>
+      <div class="copyright">© 2016 YUUICHI NAGAKURA Inc.</div>
+    </footer>
+
   </body>
 </html>
